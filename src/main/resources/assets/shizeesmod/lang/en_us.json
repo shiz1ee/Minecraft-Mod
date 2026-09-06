@@ -1,13 +1,6 @@
 {
-  "itemGroup.shizeesmod": "Example Mod Tab",
-  "block.shizeesmod.example_block": "Example Block",
-  "item.shizeesmod.example_item": "Example Item",
+  "item.shizeesmod.astralshard": "Astral Shard",
 
-  "shizeesmod.configuration.title": "Shizee's Mod Configs",
-  "shizeesmod.configuration.section.shizeesmod.common.toml": "Shizee's Mod Configs",
-  "shizeesmod.configuration.section.shizeesmod.common.toml.title": "Shizee's Mod Configs",
-  "shizeesmod.configuration.items": "Item List",
-  "shizeesmod.configuration.logDirtBlock": "Log Dirt Block",
-  "shizeesmod.configuration.magicNumberIntroduction": "Magic Number Text",
-  "shizeesmod.configuration.magicNumber": "Magic Number"
+
+
 }

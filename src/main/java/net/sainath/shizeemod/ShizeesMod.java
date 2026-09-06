@@ -1,5 +1,6 @@
 package net.sainath.shizeemod;
 
+import net.sainath.shizeemod.item.ModItems;
 import org.slf4j.Logger;
 
 import com.mojang.logging.LogUtils;
@@ -42,6 +43,9 @@ public class ShizeesMod {
         // Register the commonSetup method for modloading
         modEventBus.addListener(this::commonSetup);
 
+        ModItems.register(modEventBus);
+
+
         NeoForge.EVENT_BUS.register(this);
         // Register the item to a creative tabt
         modEventBus.addListener(this::addCreative);
@@ -56,7 +60,9 @@ public class ShizeesMod {
 
     // Add the example block item to the building blocks tab
     private void addCreative(BuildCreativeModeTabContentsEvent event) {
-
+        if(event.getTabKey() == CreativeModeTabs.INGREDIENTS) {
+            event.accept(ModItems.ASTRAL_SHARD);
+        }
     }
 
     // You can use SubscribeEvent and let the Event Bus discover methods to call
@@ -64,4 +70,5 @@ public class ShizeesMod {
     public void onServerStarting(ServerStartingEvent event) {
 
     }
+
 }
