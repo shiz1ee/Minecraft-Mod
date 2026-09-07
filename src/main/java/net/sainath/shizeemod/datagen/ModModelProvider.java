@@ -22,6 +22,7 @@ public class ModModelProvider extends ModelProvider {
 
         /*BLOCKa*/
         blockModels.createTrivialCube(ModBlocks.ASTRAL_BLOCK.get());
+        blockModels.createTrivialCube(ModBlocks.ANZIORITE.get());
 
     }
 }

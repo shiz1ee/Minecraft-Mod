@@ -36,6 +36,7 @@ public class ModCreativeModeTabs {
                     .title(Component.translatable("creativetab.ShizeesMod.Astral_blocks"))
                     .displayItems((itemDisplayParameters, output) ->{
                         output.accept(ModBlocks.ASTRAL_BLOCK);
+                        output.accept(ModBlocks.ANZIORITE);
 
 
                     }).build());

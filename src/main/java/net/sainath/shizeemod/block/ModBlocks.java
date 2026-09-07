@@ -1,7 +1,9 @@
 package net.sainath.shizeemod.block;
 
+import net.minecraft.util.valueproviders.UniformInt;
 import net.minecraft.world.item.BlockItem;
 import net.minecraft.world.level.block.Block;
+import net.minecraft.world.level.block.DropExperienceBlock;
 import net.minecraft.world.level.block.SoundType;
 import net.minecraft.world.level.block.state.BlockBehaviour;
 import net.neoforged.bus.api.IEventBus;
@@ -20,6 +22,10 @@ public class ModBlocks {
     public static final DeferredBlock<Block> ASTRAL_BLOCK = registerBlock("astral_block",
             properties -> new Block(properties.strength(4f)
                     .requiresCorrectToolForDrops().sound(SoundType.AMETHYST)));
+
+    public static final DeferredBlock<Block> ANZIORITE = registerBlock("anziorite",
+            properties -> new DropExperienceBlock(UniformInt.of(2, 5), properties.strength(5f)
+                    .requiresCorrectToolForDrops().sound(SoundType.DEEPSLATE)));
 
 
     private static <T extends Block> DeferredBlock<T> registerBlock(String name, Function<BlockBehaviour.Properties, T> function) {
