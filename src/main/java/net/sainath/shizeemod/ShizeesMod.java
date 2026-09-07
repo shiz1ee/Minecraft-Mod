@@ -1,5 +1,7 @@
 package net.sainath.shizeemod;
 
+import net.sainath.shizeemod.block.ModBlocks;
+import net.sainath.shizeemod.creativemodetab.ModCreativeModeTabs;
 import net.sainath.shizeemod.item.ModItems;
 import org.slf4j.Logger;
 
@@ -43,7 +45,10 @@ public class ShizeesMod {
         // Register the commonSetup method for modloading
         modEventBus.addListener(this::commonSetup);
 
+        ModCreativeModeTabs.register(modEventBus);
+
         ModItems.register(modEventBus);
+        ModBlocks.register(modEventBus);
 
 
         NeoForge.EVENT_BUS.register(this);
@@ -62,6 +67,13 @@ public class ShizeesMod {
     private void addCreative(BuildCreativeModeTabContentsEvent event) {
         if(event.getTabKey() == CreativeModeTabs.INGREDIENTS) {
             event.accept(ModItems.ASTRAL_SHARD);
+            event.accept(ModItems.WARPING_ASTRAL);
+
+
+        if(event.getTabKey() == CreativeModeTabs.BUILDING_BLOCKS) {
+            event.accept(ModBlocks.ASTRAL_BLOCK);
+
+        }
         }
     }
 

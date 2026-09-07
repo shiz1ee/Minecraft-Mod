@@ -10,6 +10,7 @@ public class ModItems {
     public static final DeferredRegister.Items ITEMS = DeferredRegister.createItems(ShizeesMod.MODID);
 
     public static final DeferredItem<Item> ASTRAL_SHARD = ITEMS.registerSimpleItem("astralshard");
+    public static final DeferredItem<Item> WARPING_ASTRAL = ITEMS.registerSimpleItem("warping_astral");
 
     public static void register(IEventBus eventBus) {
         ITEMS.register(eventBus);
