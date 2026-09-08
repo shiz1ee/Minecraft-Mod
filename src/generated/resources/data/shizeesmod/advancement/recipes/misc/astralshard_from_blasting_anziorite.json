@@ -1,0 +1,32 @@
+{
+  "parent": "minecraft:recipes/root",
+  "criteria": {
+    "has_anziorite": {
+      "conditions": {
+        "items": [
+          {
+            "items": "shizeesmod:anziorite"
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    },
+    "has_the_recipe": {
+      "conditions": {
+        "recipe": "shizeesmod:astralshard_from_blasting_anziorite"
+      },
+      "trigger": "minecraft:recipe_unlocked"
+    }
+  },
+  "requirements": [
+    [
+      "has_the_recipe",
+      "has_anziorite"
+    ]
+  ],
+  "rewards": {
+    "recipes": [
+      "shizeesmod:astralshard_from_blasting_anziorite"
+    ]
+  }
+}
