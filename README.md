@@ -1,6 +1,7 @@
 # ShizeesMod
 
 An exploration- and astral-themed Minecraft mod built for **NeoForge 26.2+**, adding high-risk cosmic materials, rare geological formations, and detection utilities.
+![ShizeesMod Showcase](screenshot/Screenshot.png)
 
 ---
 
