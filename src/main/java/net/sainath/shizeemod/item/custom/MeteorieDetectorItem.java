@@ -16,8 +16,8 @@ import net.minecraft.world.level.block.Block;
 import net.minecraft.world.level.block.Blocks;
 import net.minecraft.world.level.block.state.BlockState;
 
-public class MeteorieDetector extends Item {
-    public MeteorieDetector(Properties properties) {
+public class MeteorieDetectorItem extends Item {
+    public MeteorieDetectorItem(Properties properties) {
         super(properties);
     }
 

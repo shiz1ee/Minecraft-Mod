@@ -19,6 +19,7 @@ public class ModModelProvider extends ModelProvider {
     protected void registerModels(BlockModelGenerators blockModels, ItemModelGenerators itemModels) {
         itemModels.generateFlatItem(ModItems.ASTRAL_SHARD.get(), ModelTemplates.FLAT_ITEM);
         itemModels.generateFlatItem(ModItems.WARPING_ASTRAL.get(), ModelTemplates.FLAT_ITEM);
+        itemModels.generateFlatItem(ModItems.METEORIE_DETECTOR.get(), ModelTemplates.FLAT_ITEM);
 
         /*BLOCKa*/
         blockModels.createTrivialCube(ModBlocks.ASTRAL_BLOCK.get());

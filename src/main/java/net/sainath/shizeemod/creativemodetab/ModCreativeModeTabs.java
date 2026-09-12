@@ -27,6 +27,8 @@ public class ModCreativeModeTabs {
                         output.accept(ModItems.ASTRAL_SHARD);
                         output.accept(ModItems.WARPING_ASTRAL);
 
+                        output.accept(ModItems.METEORIE_DETECTOR);
+
 
                     }).build());
 

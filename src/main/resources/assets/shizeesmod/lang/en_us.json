@@ -1,11 +1,15 @@
 {
   "item.shizeesmod.astralshard": "Astral Shard",
   "item.shizeesmod.warping_astral": "Warping Astral",
+
   "creativetab.ShizeesMod.Astral_items": "Astral Shizee items",
   "creativetab.ShizeesMod.Astral_blocks": "Astral Shizee Blocks",
+
   "block.shizeesmod.astral_block": "Block of Astral",
   "block.shizeesmod.anziorite": "Anziorite Ore",
-  "item.Shizeesmod.metal_detector.no_valuables": "NO Valuables FOUND"
+
+  "item.shizeesmod.meteorie_detector.no_valuables": "NO Valuables FOUND",
+  "item.shizeesmod.meteorie_detector": "Meteorie Detector"
 
 
 }
