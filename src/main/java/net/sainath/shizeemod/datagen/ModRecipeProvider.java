@@ -12,6 +12,7 @@ import net.minecraft.world.item.crafting.AbstractCookingRecipe;
 import net.minecraft.world.item.crafting.CookingBookCategory;
 import net.minecraft.world.item.crafting.Ingredient;
 import net.minecraft.world.level.ItemLike;
+import net.minecraft.world.level.block.Blocks;
 import net.sainath.shizeemod.ShizeesMod;
 import net.sainath.shizeemod.block.ModBlocks;
 import net.sainath.shizeemod.item.ModItems;
@@ -69,6 +70,17 @@ public class ModRecipeProvider extends RecipeProvider {
 
         oreSmelting(ASTRAL_SHARD_SMELTABLES, RecipeCategory.MISC, CookingBookCategory.MISC, ModItems.ASTRAL_SHARD.get(), 0.25f, 200, "astral");
         oreBlasting(ASTRAL_SHARD_SMELTABLES, RecipeCategory.MISC, CookingBookCategory.MISC, ModItems.ASTRAL_SHARD.get(), 0.25f, 100, "astral");
+
+        shaped(RecipeCategory.MISC, ModItems.METEORIE_DETECTOR.get())
+                .pattern("BCB")
+                .pattern("CAC")
+                .pattern("BCB")
+                .define('A', Items.DIAMOND)
+                .define('B', Blocks.ANDESITE)
+                .define('C', Items.IRON_INGOT)
+                .unlockedBy(getHasName(Items.IRON_INGOT), has(Items.DIAMOND))
+                .group("astral")
+                .save(output);
     }
 
     @Override

@@ -9,7 +9,8 @@
   "block.shizeesmod.anziorite": "Anziorite Ore",
 
   "item.shizeesmod.meteorie_detector.no_valuables": "NO Valuables FOUND",
-  "item.shizeesmod.meteorie_detector": "Meteorie Detector"
+  "item.shizeesmod.meteorie_detector": "Meteorie Detector",
+  "tooltip.shizeesmod.meteoriedetector.tooltip": "i wonder what else  does it detect....."
 
 
 }

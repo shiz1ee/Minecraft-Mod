@@ -1,0 +1,17 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "group": "astral",
+  "key": {
+    "A": "minecraft:diamond",
+    "B": "minecraft:andesite",
+    "C": "minecraft:iron_ingot"
+  },
+  "pattern": [
+    "BCB",
+    "CAC",
+    "BCB"
+  ],
+  "result": {
+    "id": "shizeesmod:meteorie_detector"
+  }
+}
