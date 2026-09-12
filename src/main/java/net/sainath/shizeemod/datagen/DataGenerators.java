@@ -9,6 +9,7 @@ import net.neoforged.neoforge.common.data.DatapackBuiltinEntriesProvider;
 import net.neoforged.neoforge.data.event.GatherDataEvent;
 import net.neoforged.neoforge.registries.NeoForgeRegistries;
 import net.sainath.shizeemod.ShizeesMod;
+import net.sainath.shizeemod.ShizeesMod;
 
 import java.util.Set;
 import java.util.concurrent.CompletableFuture;
@@ -26,6 +27,6 @@ public class DataGenerators {
         PackOutput output = generator.getPackOutput();
         CompletableFuture<HolderLookup.Provider> lookupProvider = event.getLookupProvider();
 
-        generator.addProvider(true, new DatapackBuiltinEntriesProvider(output, lookupProvider, BUILDER, Set.of(ShizeesMod.MODID)));
+        generator.addProvider(true, new DatapackBuiltinEntriesProvider(output, lookupProvider, BUILDER, Set.of(net.sainath.shizeemod.ShizeesMod.MODID)));
     }
 }
