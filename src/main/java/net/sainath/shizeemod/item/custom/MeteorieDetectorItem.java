@@ -18,6 +18,7 @@ import net.minecraft.world.level.Level;
 import net.minecraft.world.level.block.Block;
 import net.minecraft.world.level.block.Blocks;
 import net.minecraft.world.level.block.state.BlockState;
+import net.sainath.shizeemod.block.ModBlocks;
 
 import java.util.function.Consumer;
 
@@ -76,7 +77,8 @@ public class MeteorieDetectorItem extends Item {
 
     private boolean isValuableBlock(BlockState blockState) {
         return blockState.is(Blocks.IRON_ORE) || blockState.is(Blocks.DEEPSLATE_IRON_ORE)
-                || blockState.is(Blocks.DIAMOND_ORE) || blockState.is(Blocks.DEEPSLATE_DIAMOND_ORE);
+                || blockState.is(Blocks.DIAMOND_ORE) || blockState.is(Blocks.DEEPSLATE_DIAMOND_ORE)
+                || blockState.is(ModBlocks.ANZIORITE);
     }
 
     private void outputValuableCoordinates(BlockPos position, Player player, Block block) {

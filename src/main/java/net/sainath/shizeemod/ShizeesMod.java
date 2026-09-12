@@ -2,6 +2,7 @@ package net.sainath.shizeemod;
 
 import net.sainath.shizeemod.block.ModBlocks;
 import net.sainath.shizeemod.creativemodetab.ModCreativeModeTabs;
+import net.sainath.shizeemod.datagen.DataGenerators;
 import net.sainath.shizeemod.item.ModItems;
 import org.slf4j.Logger;
 
@@ -34,6 +35,7 @@ import net.neoforged.neoforge.registries.DeferredHolder;
 import net.neoforged.neoforge.registries.DeferredItem;
 import net.neoforged.neoforge.registries.DeferredRegister;
 
+
 // The value here should match an entry in the META-INF/neoforge.mods.toml file
 @Mod(ShizeesMod.MODID)
 public class ShizeesMod {
@@ -44,6 +46,7 @@ public class ShizeesMod {
     public ShizeesMod(IEventBus modEventBus, ModContainer modContainer) {
         // Register the commonSetup method for modloading
         modEventBus.addListener(this::commonSetup);
+        modEventBus.addListener(DataGenerators::gatherData);
 
         ModCreativeModeTabs.register(modEventBus);
 
