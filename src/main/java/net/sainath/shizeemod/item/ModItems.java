@@ -56,6 +56,19 @@ public class ModItems {
     public static final DeferredItem<Item> STRAWBERRYSHORTCAKE = ITEMS.registerItem("strawberryshortcake",
             properties -> new Item(properties.food(ModFoods.STRAWBERRYSHORTCAKE, ModFoods.STRAWBERRYSHORTCAKE_CONSUMABLE)));
 
+    public static DeferredItem<Item> DOUGH = ITEMS.registerItem("dough",
+            properties -> new Item(properties.food(ModFoods.DOUGH, ModFoods.DOUGH_CONSUMABLE)));
+
+    public static DeferredItem<Item> CHOCOLATE = ITEMS.registerItem("chocolate",
+            properties -> new Item(properties.food(ModFoods.CHOCOLATE, ModFoods.CHOCOLATE_CONSUMALBE)));
+
+    public static DeferredItem<Item> STRAWBERRY = ITEMS.registerItem("strawberry",
+            properties -> new Item(properties.food(ModFoods.STRAWBERRY, ModFoods.STRAWBERRY_CONSUMALBE)));
+
+    public static DeferredItem<Item> AVOCADO = ITEMS.registerItem("avocado",
+            properties -> new Item(properties.food(ModFoods.AVOCADO, ModFoods.AVOCADO_CONSUMALBE)));
+
+
 
     public static void register(IEventBus eventBus) {
         ITEMS.register(eventBus);

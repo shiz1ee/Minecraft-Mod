@@ -47,6 +47,10 @@ public class ModCreativeModeTabs {
                         output.accept(ModItems.DANISHGLAZED);
                         output.accept(ModItems.DANISHGLAZED2);
                         output.accept(ModItems.STRAWBERRYSHORTCAKE);
+                        output.accept(ModItems.DOUGH);
+                        output.accept(ModItems.STRAWBERRY);
+                        output.accept(ModItems.CHOCOLATE);
+                        output.accept(ModItems.AVOCADO);
 
 
                     })

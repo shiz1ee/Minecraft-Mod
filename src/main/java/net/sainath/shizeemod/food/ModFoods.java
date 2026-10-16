@@ -54,13 +54,17 @@ public class ModFoods {
             new MobEffectInstance(MobEffects.ABSORPTION, 120, 1)
     ))).build();
 
+    public static final FoodProperties DOUGH = new FoodProperties.Builder().nutrition(1).saturationModifier(0.1f).build();
+    public static final Consumable DOUGH_CONSUMABLE = Consumables.defaultFood().consumeSeconds(1.4f).onConsume(new ApplyStatusEffectsConsumeEffect(List.of(
+            new MobEffectInstance(MobEffects.HUNGER,300,0),
+            new MobEffectInstance(MobEffects.NAUSEA, 100, 0)), 0.5f)).build();
 
+    public static final FoodProperties CHOCOLATE = new FoodProperties.Builder().nutrition(2).saturationModifier(0.3f).build();
+    public static final Consumable CHOCOLATE_CONSUMALBE = Consumables.defaultFood().consumeSeconds(1.4f).build();
 
+    public static final FoodProperties STRAWBERRY = new FoodProperties.Builder().nutrition(2).saturationModifier(0.3f).build();
+    public static final Consumable STRAWBERRY_CONSUMALBE = Consumables.defaultFood().consumeSeconds(1.4f).build();
 
-
-
-
-
-
-
+    public static final FoodProperties AVOCADO = new FoodProperties.Builder().nutrition(2).saturationModifier(0.3f).build();
+    public static final Consumable AVOCADO_CONSUMALBE = Consumables.defaultFood().consumeSeconds(1.4f).build();
 }
