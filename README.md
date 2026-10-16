@@ -1,59 +1,43 @@
-# ShizeesMod
+## Shizees Mod
 
-An exploration- and astral-themed Minecraft mod built for **NeoForge 26.2+**, adding high-risk cosmic materials, rare geological formations, and detection utilities.
+An Alien/Cosmic themed minecraft mod made for neoforge **26.2** which adds custom items/blocks/ores which has some lore behind it!  
+
+
+## To play the Mod 
+* download the jar file from the  github release.
+* make sure the version is same and not different.
+* make sure it is Neoforge and not Forge.
+
+## Features Included in the Mod 
+## Items 
+
+* Warping Astral
+* the warping Astral has a unique mechanic that i implemented regarding its lore which involves around the darkness of the **Cosmos**.
+* When the sun's light gets radiated on  the warping astral, It begins to shake violently and teleports to its **mothership**.
+
+* Astral Shard
+* a stabalized core material acquired by smelting The Anzionite.
+* designed to create heavy power transmuting crystallized blocks.
+
+* Meteoite Detecter
+* A unique ball made to scan rare ores and specially the meteorite which fell onto the world by **unknown reasons**.
+* **it looks good**
+
+## Blocks 
+* Anzionite Ore
+* A meteorite which fell from unknown origins embedded deep into the world.
+* When mining it gives **Warping Astral**
+
+* Astral Block
+* A very high Energy densed Block made with the hightly stabalized Astral shard causing it to destabalize.
+
 ![ShizeesMod Showcase](screenshot/Screenshot.png)
 
----
 
-## Features
+## Teck Stack 
+* Java : JDK 25
+* Mod Loader : Neoforge 1.21+
+* IDE : Intellij IDEA 
 
-### Items & Custom Mechanics
 
-* **Warping Astral**
-  * **Solar Instability:** the Warping Astral violently destabilizes in direct daylight. Holding it in your main hand or off-hand under open skies causes it to evaporate fast and reconnect with its mothership as it was originally from outerspace.
-  * emits portal trails and audio apon dissolving
-  * Includes dedicated safety warnings and lore tooltips.
-
-* **Astral Shard**
-  * Core material acquired via smelting ores or transmuting higher-tier materials.
-  * Used in compacting blocks and advanced crafting.
-
-* **Meteoite Detector**
-  * Handheld scanning utility made for scanning rare finds (64 max durability).
-  * Designed to probe deep subterranean strata for rare geological anomalies and ore signatures.
-
----
-
-### Blocks & World Generation
-
-* **Anzionite Ore**
-  * Deep-underground vein generation embedded in both stone and deepslate layers
-  * Tuned to diamond-tier rarity with balanced cluster sizes.
-  * Yields raw **Warping Astral** when mined directly, or smelts down into **Astral Shards**.
-
-* **Astral Block**
-  * Compact storage block crafted from 9 Astral Shards.
-  * Usable in high-yield diamond transmutation recipes.
-
----
-
-### Integrations
-
-* **Just Enough Items (JEI)**
-  * Native compatibility via `ModJEIPlugin`.
-  * Dedicated in-game information panels explaining item mechanics, solar-decay conditions, and progression paths.
-
----
-
-## Development Setup
-
-### Requirements
-* **Java:** JDK 25
-* **Loader:** NeoForge 1.21+
-* **IDE:** IntelliJ IDEA (recommended)
-
-### Building from Source
-
-1. Clone the repository:
-   ```bash
-   git clone [https://github.com/bububaba/Minecraft-Mod.git](https://github.com/bububaba/Minecraft-Mod.git)
+## compatibility with Just enough Items (JEI)
