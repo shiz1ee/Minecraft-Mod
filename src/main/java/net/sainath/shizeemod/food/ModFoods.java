@@ -46,7 +46,7 @@ public class ModFoods {
     public static final Consumable DANISHGLAZED_CONSUMABLE = Consumables.defaultFood().consumeSeconds(1.6f).onConsume(new ApplyStatusEffectsConsumeEffect(new MobEffectInstance(MobEffects.HASTE,300, 0))).build();
 
     public static final FoodProperties DANISHGLAZED2 = new FoodProperties.Builder().nutrition(4).saturationModifier(0.5f).build();
-    public static final Consumable DANISHGLAZED_CONSUMABLE2 = Consumables.defaultFood().consumeSeconds(1.6f).onConsume(new ApplyStatusEffectsConsumeEffect(new MobEffectInstance(MobEffects.HASTE,300, 0))).build();
+    public static final Consumable DANISHGLAZED_CONSUMABLE2 = Consumables.defaultFood().consumeSeconds(1.6f).onConsume(new ApplyStatusEffectsConsumeEffect(new MobEffectInstance(MobEffects.HASTE,300, 1))).build();
 
     public static final FoodProperties STRAWBERRYSHORTCAKE = new FoodProperties.Builder().nutrition(8).saturationModifier(0.6f).build();
     public static final Consumable STRAWBERRYSHORTCAKE_CONSUMABLE = Consumables.defaultFood().consumeSeconds(2.2f).onConsume(new ApplyStatusEffectsConsumeEffect(List.of(
