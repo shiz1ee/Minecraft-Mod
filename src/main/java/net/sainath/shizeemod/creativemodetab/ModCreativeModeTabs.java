@@ -10,6 +10,7 @@ import net.neoforged.bus.api.IEventBus;
 import net.neoforged.neoforge.registries.DeferredRegister;
 import net.sainath.shizeemod.ShizeesMod;
 import net.sainath.shizeemod.block.ModBlocks;
+import net.sainath.shizeemod.food.ModFoods;
 import net.sainath.shizeemod.item.ModItems;
 
 import java.util.function.Supplier;
@@ -31,6 +32,27 @@ public class ModCreativeModeTabs {
 
 
                     }).build());
+
+    public static final Supplier<CreativeModeTab> ASTRAL_FOOD_TAB = CREATIVE_MODE_TABS.register("astral_foods_tab"
+            , () -> CreativeModeTab.builder()
+                    .icon(() -> new ItemStack(ModItems.DONUT.get()))
+                    .title(Component.translatable("creativetab.ShizeesMod.food_tabs"))
+                    .withTabsBefore(CreativeModeTabs.FOOD_AND_DRINKS)
+                    .displayItems((params, output) ->{
+                        output.accept(ModItems.DONUT);
+                        output.accept(ModItems.CHOCOLATEBERRYSHORTCAKE);
+                        output.accept(ModItems.CROISSANT);
+                        output.accept(ModItems.CROISSANTSANDWICH);
+                        output.accept(ModItems.CROISSANTAVOCADOSANDWICH);
+                        output.accept(ModItems.DANISHGLAZED);
+                        output.accept(ModItems.DANISHGLAZED2);
+                        output.accept(ModItems.STRAWBERRYSHORTCAKE);
+
+
+                    })
+                    .build());
+
+
 
 
     public static final Supplier<CreativeModeTab> ASTRAL_BLOCKS_TAB = CREATIVE_MODE_TABS.register("astral_blocks_tab"

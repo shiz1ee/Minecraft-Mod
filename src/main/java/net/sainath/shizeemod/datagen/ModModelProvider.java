@@ -20,6 +20,14 @@ public class ModModelProvider extends ModelProvider {
         itemModels.generateFlatItem(ModItems.ASTRAL_SHARD.get(), ModelTemplates.FLAT_ITEM);
         itemModels.generateFlatItem(ModItems.WARPING_ASTRAL.get(), ModelTemplates.FLAT_ITEM);
         itemModels.generateFlatItem(ModItems.METEORIE_DETECTOR.get(), ModelTemplates.FLAT_ITEM);
+        itemModels.generateFlatItem(ModItems.DONUT.get(), ModelTemplates.FLAT_ITEM);
+        itemModels.generateFlatItem(ModItems.CHOCOLATEBERRYSHORTCAKE.get(), ModelTemplates.FLAT_ITEM);
+        itemModels.generateFlatItem(ModItems.CROISSANT.get(), ModelTemplates.FLAT_ITEM);
+        itemModels.generateFlatItem(ModItems.CROISSANTSANDWICH.get(), ModelTemplates.FLAT_ITEM);
+        itemModels.generateFlatItem(ModItems.CROISSANTAVOCADOSANDWICH.get(), ModelTemplates.FLAT_ITEM);
+        itemModels.generateFlatItem(ModItems.DANISHGLAZED.get(), ModelTemplates.FLAT_ITEM);
+        itemModels.generateFlatItem(ModItems.DANISHGLAZED2.get(), ModelTemplates.FLAT_ITEM);
+        itemModels.generateFlatItem(ModItems.STRAWBERRYSHORTCAKE.get(), ModelTemplates.FLAT_ITEM);
 
         /*BLOCKa*/
         blockModels.createTrivialCube(ModBlocks.ASTRAL_BLOCK.get());

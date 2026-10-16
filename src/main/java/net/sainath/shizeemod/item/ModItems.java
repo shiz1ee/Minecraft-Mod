@@ -6,9 +6,11 @@ import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.item.TooltipFlag;
 import net.minecraft.world.item.component.TooltipDisplay;
 import net.neoforged.bus.api.IEventBus;
+import net.neoforged.fml.common.Mod;
 import net.neoforged.neoforge.registries.DeferredItem;
 import net.neoforged.neoforge.registries.DeferredRegister;
 import net.sainath.shizeemod.ShizeesMod;
+import net.sainath.shizeemod.food.ModFoods;
 import net.sainath.shizeemod.item.custom.MeteorieDetectorItem;
 import net.sainath.shizeemod.item.custom.MeteorieDetectorItem;
 import net.sainath.shizeemod.item.custom.WarpingAstralItem;
@@ -29,6 +31,30 @@ public class ModItems {
                     super.appendHoverText(itemStack, context, display, builder, tooltipFlag);
                 }
             });
+
+    public static final DeferredItem<Item> DONUT = ITEMS.registerItem("donut",
+            properties -> new Item(properties.food(ModFoods.DONUT, ModFoods.DONUT_CONSUMABLE)));
+
+    public static final DeferredItem<Item> CHOCOLATEBERRYSHORTCAKE = ITEMS.registerItem("chocolateberryshortcake",
+            properties -> new Item(properties.food(ModFoods.CHOCOLATEBERRYSHORTCAKE, ModFoods.CHOCOLATEBERRYSHORTCAKE_CONSUMABLE)));
+
+    public static final DeferredItem<Item> CROISSANT = ITEMS.registerItem("croissant",
+            properties -> new Item(properties.food(ModFoods.CROISSANT, ModFoods.CROISSANT_CONSUMABLE)));
+
+    public static final DeferredItem<Item> CROISSANTSANDWICH = ITEMS.registerItem("croissantsandwich",
+            properties -> new Item(properties.food(ModFoods.CROISSANTSANDWICH, ModFoods.CROISSANTSANDWICH_CONSUMABLE)));
+
+    public static final DeferredItem<Item> CROISSANTAVOCADOSANDWICH = ITEMS.registerItem("croissantavocadosandwich",
+            properties -> new Item(properties.food(ModFoods.CROISSANTAVOCADOSANDWICH, ModFoods.CROISSANTAVOCADOSANDWICH_CONSUMABLE)));
+
+    public static final DeferredItem<Item> DANISHGLAZED = ITEMS.registerItem("danishglazed",
+            properties -> new Item(properties.food(ModFoods.DANISHGLAZED, ModFoods.DANISHGLAZED_CONSUMABLE)));
+
+    public static final DeferredItem<Item> DANISHGLAZED2 = ITEMS.registerItem("danishglazed2",
+            properties -> new Item(properties.food(ModFoods.DANISHGLAZED2, ModFoods.DANISHGLAZED_CONSUMABLE2)));
+
+    public static final DeferredItem<Item> STRAWBERRYSHORTCAKE = ITEMS.registerItem("strawberryshortcake",
+            properties -> new Item(properties.food(ModFoods.STRAWBERRYSHORTCAKE, ModFoods.STRAWBERRYSHORTCAKE_CONSUMABLE)));
 
 
     public static void register(IEventBus eventBus) {

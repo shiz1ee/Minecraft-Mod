@@ -8,9 +8,26 @@
   "block.shizeesmod.astral_block": "Block of Astral",
   "block.shizeesmod.anziorite": "Anziorite Ore",
 
+
   "item.shizeesmod.meteorie_detector.no_valuables": "NO Valuables FOUND",
   "item.shizeesmod.meteorie_detector": "Meteorie Detector",
-  "tooltip.shizeesmod.meteoriedetector.tooltip": "i wonder what else  does it detect....."
+
+
+  "item.shizeesmod.donut": "Donut",
+  "item.shizeesmod.chocolateberryshortcake": "Chocolate Berry Short Cake",
+  "item.shizeesmod.croissant": "Croissant",
+  "item.shizeesmod.croissantsandwich": "Croissant Sandwich",
+  "item.shizeesmod.croissantavocadosandwich": "Croissant Avocado Sandwich",
+  "item.shizeesmod.danishglazed": "Ganish Dlazed",
+  "item.shizeesmod.danishglazed2": "Danish Glazed",
+  "item.shizeesmod.strawberryshortcake": "Strawberry Short Cake",
+
+
+
+
+
+  "tooltip.shizeesmod.meteoriedetector.tooltip": "i wonder what else  does it detect.....",
+  "creativetab.ShizeesMod.food_tabs": "foods"
 
 
 }
