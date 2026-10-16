@@ -81,7 +81,76 @@ public class ModRecipeProvider extends RecipeProvider {
                 .unlockedBy(getHasName(Items.IRON_INGOT), has(Items.DIAMOND))
                 .group("astral")
                 .save(output);
+
+
+
+        shapeless(RecipeCategory.FOOD, ModItems.DOUGH.get())
+                .requires(Items.WHEAT, 3).requires(Items.EGG).requires(Items.MILK_BUCKET)
+                .unlockedBy(getHasName(Items.WHEAT), has(Items.WHEAT))
+                .save(output);
+
+        shapeless(RecipeCategory.FOOD, ModItems.CHOCOLATE.get())
+                .requires(Items.COCOA_BEANS, 2).requires(Items.SUGAR).requires(Items.MILK_BUCKET)
+                .unlockedBy(getHasName(Items.COCOA_BEANS), has(Items.COCOA_BEANS))
+                .save(output);
+
+        shapeless(RecipeCategory.FOOD, ModItems.STRAWBERRY.get())
+                .requires(Items.SWEET_BERRIES).requires(Items.WHEAT_SEEDS)
+                .unlockedBy(getHasName(Items.SWEET_BERRIES), has(Items.SWEET_BERRIES))
+                .save(output);
+
+        shapeless(RecipeCategory.FOOD, ModItems.AVOCADO.get())
+                .requires(Items.APPLE).requires(Items.EMERALD)
+                .unlockedBy(getHasName(Items.APPLE), has(Items.APPLE))
+                .save(output);
+
+        //FOOOOOODDDDDDD
+        oreSmelting(List.of(ModItems.DOUGH.get()), RecipeCategory.FOOD, CookingBookCategory.FOOD,
+                ModItems.CROISSANT.get(), 0.35f, 200, "croissant");
+
+        shapeless(RecipeCategory.FOOD, ModItems.CROISSANTSANDWICH.get())
+                .requires(ModItems.CROISSANT.get()).requires(Items.COOKED_BEEF).requires(Items.EGG)
+                .unlockedBy(getHasName(ModItems.CROISSANT.get()), has(ModItems.CROISSANT.get()))
+                .save(output);
+
+        shapeless(RecipeCategory.FOOD, ModItems.CROISSANTAVOCADOSANDWICH.get())
+                .requires(ModItems.CROISSANT.get()).requires(ModItems.AVOCADO).requires(Items.EGG)
+                .unlockedBy(getHasName(ModItems.CROISSANT.get()), has(ModItems.CROISSANT.get()))
+                .save(output);
+
+        shapeless(RecipeCategory.FOOD, ModItems.DANISHGLAZED.get())
+                .requires(ModItems.DOUGH.get()).requires(Items.HONEY_BOTTLE).requires(Items.SUGAR)
+                .unlockedBy(getHasName(ModItems.DOUGH.get()), has(ModItems.DOUGH.get()))
+                .save(output);
+
+        shapeless(RecipeCategory.FOOD, ModItems.DANISHGLAZED2.get())
+                .requires(ModItems.DANISHGLAZED.get()).requires(ModItems.STRAWBERRY.get())
+                .unlockedBy(getHasName(ModItems.DANISHGLAZED.get()), has(ModItems.DANISHGLAZED.get()))
+                .save(output);
+
+        shapeless(RecipeCategory.FOOD, ModItems.STRAWBERRYSHORTCAKE.get())
+                .requires(ModItems.DOUGH.get()).requires(ModItems.STRAWBERRY.get(), 2)
+                .requires(Items.SUGAR).requires(Items.EGG)
+                .unlockedBy(getHasName(ModItems.STRAWBERRY.get()), has(ModItems.STRAWBERRY.get()))
+                .save(output);
+
+        shapeless(RecipeCategory.FOOD, ModItems.CHOCOLATEBERRYSHORTCAKE.get())
+                .requires(ModItems.DOUGH.get()).requires(ModItems.CHOCOLATE.get())
+                .requires(ModItems.STRAWBERRY.get()).requires(Items.SWEET_BERRIES).requires(Items.SUGAR)
+                .unlockedBy(getHasName(ModItems.CHOCOLATE.get()), has(ModItems.CHOCOLATE.get()))
+                .save(output);
+
+        shaped(RecipeCategory.FOOD, ModItems.DONUT.get(),2)
+                .pattern(" S ")
+                .pattern("D D")
+                .pattern(" D ")
+                .define('S', Items.SUGAR)
+                .define('D', ModItems.DONUT.get())
+                .unlockedBy(getHasName(ModItems.DOUGH.get()), has(ModItems.DOUGH.get()))
+                .save(output);
+
     }
+
 
     @Override
     protected <T extends AbstractCookingRecipe> void oreCooking(AbstractCookingRecipe.Factory<T> factory, List<ItemLike> smeltables,

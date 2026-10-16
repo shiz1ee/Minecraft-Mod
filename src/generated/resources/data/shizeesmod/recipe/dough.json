@@ -1,0 +1,13 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    "minecraft:wheat",
+    "minecraft:wheat",
+    "minecraft:wheat",
+    "minecraft:egg",
+    "minecraft:milk_bucket"
+  ],
+  "result": {
+    "id": "shizeesmod:dough"
+  }
+}

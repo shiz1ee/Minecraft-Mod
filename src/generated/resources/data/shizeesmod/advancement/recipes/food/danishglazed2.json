@@ -1,0 +1,32 @@
+{
+  "parent": "minecraft:recipes/root",
+  "criteria": {
+    "has_danishglazed": {
+      "conditions": {
+        "items": [
+          {
+            "items": "shizeesmod:danishglazed"
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    },
+    "has_the_recipe": {
+      "conditions": {
+        "recipe": "shizeesmod:danishglazed2"
+      },
+      "trigger": "minecraft:recipe_unlocked"
+    }
+  },
+  "requirements": [
+    [
+      "has_the_recipe",
+      "has_danishglazed"
+    ]
+  ],
+  "rewards": {
+    "recipes": [
+      "shizeesmod:danishglazed2"
+    ]
+  }
+}

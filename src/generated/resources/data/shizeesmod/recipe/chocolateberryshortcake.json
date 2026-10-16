@@ -1,0 +1,13 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    "shizeesmod:dough",
+    "shizeesmod:chocolate",
+    "shizeesmod:strawberry",
+    "minecraft:sweet_berries",
+    "minecraft:sugar"
+  ],
+  "result": {
+    "id": "shizeesmod:chocolateberryshortcake"
+  }
+}

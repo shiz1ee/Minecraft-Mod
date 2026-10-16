@@ -1,0 +1,11 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    "shizeesmod:croissant",
+    "minecraft:cooked_beef",
+    "minecraft:egg"
+  ],
+  "result": {
+    "id": "shizeesmod:croissantsandwich"
+  }
+}

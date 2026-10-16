@@ -1,0 +1,11 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    "shizeesmod:dough",
+    "minecraft:honey_bottle",
+    "minecraft:sugar"
+  ],
+  "result": {
+    "id": "shizeesmod:danishglazed"
+  }
+}

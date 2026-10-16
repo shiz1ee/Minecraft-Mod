@@ -1,0 +1,10 @@
+{
+  "type": "minecraft:smelting",
+  "category": "food",
+  "experience": 0.35,
+  "group": "croissant",
+  "ingredient": "shizeesmod:dough",
+  "result": {
+    "id": "shizeesmod:croissant"
+  }
+}
